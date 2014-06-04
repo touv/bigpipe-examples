@@ -1,0 +1,15 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <%- bootstrap %>
+    <title>Index</title>
+  </head>
+  <body>
+  <h1>Some examples :</h1>
+  <ul>
+    <% Object.keys(examples).forEach(function(key, index) { %>
+      <li><%= index + 1 %>. <a href="/<%= key %>"><%= examples[key] %></a></li>
+    <% }) %>
+  </ul>
+  </body>
+</html>
