@@ -1,0 +1,26 @@
+{
+  "name": "bigpipe-examples",
+  "version": "0.0.0",
+  "description": "Some examples to use bigpipe framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Thouvenin",
+  "license": "MIT",
+  "dependencies": {
+    "bigpipe": "latest"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/touv/bigpipe-examples.git"
+  },
+  "keywords": [
+    "bigpipe"
+  ],
+  "bugs": {
+    "url": "https://github.com/touv/bigpipe-examples/issues"
+  },
+  "homepage": "https://github.com/touv/bigpipe-examples"
+}
