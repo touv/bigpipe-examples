@@ -14,6 +14,7 @@ BigPipe.Page.extend({
       , 'unknown-page' : 'How to define the "not found" page'
       , 'deliberate-error' : 'How to define the "internal server error" page'
       , 'get-params/Hello/World' : 'How to get params from URL'
+      , 'get-query' : 'How to get fields from URL query string'
       }
     }
 }).on(module)
