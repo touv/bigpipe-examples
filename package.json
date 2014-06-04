@@ -9,7 +9,7 @@
   "author": "Nicolas Thouvenin",
   "license": "MIT",
   "dependencies": {
-    "bigpipe": "latest"
+    "bigpipe": "git+http://github.com/bigpipe/bigpipe"
   },
   "devDependencies": {},
   "repository": {
