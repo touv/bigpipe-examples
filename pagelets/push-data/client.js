@@ -1,13 +1,10 @@
 /* should not be empty */
 
-pipe.once('pageletest:initialize', function init(pagelet) {
+pipe.once('thepagelet:initialize', function init(pagelet) {
     'use strict';
-    console.log('initialize');
-    pagelet.substream.on('data', function (data) { console.log('push', data) });
+    $('#serverresponse').text('...');
+    pagelet.substream.on('data', function (data) { 
+        $('#serverresponse').text(data);
+    });
   }
 );
-
-pipe.on('pageletest:render', function render(pagelet) {
-    console.log('render');
-    pagelet.substream.on('data', function (data) { console.log('push', data) });
-});

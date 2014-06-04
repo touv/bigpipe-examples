@@ -2,18 +2,21 @@
 
 var Pagelet = require('bigpipe').Pagelet
 ;
-;
 
 Pagelet.extend({
     view: './view.ejs',
     js: './client.js',
-    data: { msg : 'OK' },
+    dependencies: [
+      'http://code.jquery.com/jquery-2.1.1.min.js'
+    ],
     get: function(render) {
       var pagelet = this;
+      render(undefined, {});
 
-      render(undefined, {msg: 'OK'});
       setTimeout(function() {
+          console.log('substream', pagelet.substream);
           pagelet.substream.write({ prop: 'hi there', other: 'hello' });
-        }, 5000);
-    },
+      }, 3000);
+
+    }
 }).on(module);
